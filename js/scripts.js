@@ -18,8 +18,8 @@ function actualizarContador() {
 
     let timeRemaining = `${months} Months, ${days} Days, ${hours} Hours, ${minutes} Minutes remaining for the wedding`;
 
-    if (document.documentElement.getAttribute("lang") === "en") {
-      timeRemaining = `${months} Months, ${days} Days, ${hours} Hours, ${minutes} Minutes remaining for the wedding`;
+    if (document.documentElement.getAttribute("lang") === "es") {
+      timeRemaining = `${months} Meses, ${days} Dias, ${hours} Horas, ${minutes} Minutos restantes para la Boda`;
     }
 
     document.getElementById("contador").innerText = timeRemaining;
