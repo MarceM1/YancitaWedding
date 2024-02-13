@@ -215,7 +215,21 @@
             ¡Gracias por compartir este día especial con nosotros!
           </p>
           <form action="https://formsubmit.io/send/missylaing23@gmail.com" method="post"> 
-            <div class="d-flex justify-content-between">
+            <div class="d-flex flex-column d-md-none justify-content-between gap-3">
+                <input
+                  type="text"
+                  class="form-control w-100 "
+                  required
+                  placeholder="Ingresa tu nombre y apellido"
+                  name="name"
+                  id="name"
+                />
+                <button type="submit" class="btn btn-secondary">
+                  Confirma Asistencia
+                </button>
+              </div>
+  
+            <div class="d-none d-md-flex justify-content-between">
               <input
                 type="text"
                 class="form-control w-50 "
