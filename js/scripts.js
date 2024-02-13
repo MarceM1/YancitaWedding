@@ -1,20 +1,30 @@
 const fechaBoda = new Date("2024-07-13T15:00:00");
 
-        function actualizarContador() {
-            const ahora = new Date();
-            const diffTiempo = fechaBoda.getTime() - ahora.getTime();
+function actualizarContador() {
+  const ahora = new Date();
+  const diffTiempo = fechaBoda.getTime() - ahora.getTime();
 
-            if (diffTiempo <= 0) {
-                document.getElementById('contador').innerText = "¡Llegó el gran día!";
-            } else {
-                const meses = Math.floor(diffTiempo / (1000 * 60 * 60 * 24 * 30));
-                const dias = Math.floor((diffTiempo % (1000 * 60 * 60 * 24 * 30)) / (1000 * 60 * 60 * 24));
-                const horas = Math.floor((diffTiempo % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                const minutos = Math.floor((diffTiempo % (1000 * 60 * 60)) / (1000 * 60));
+  if (diffTiempo <= 0) {
+    document.getElementById("contador").innerText = "The big day has arrived!";
+  } else {
+    const months = Math.floor(diffTiempo / (1000 * 60 * 60 * 24 * 30));
+    const days = Math.floor(
+      (diffTiempo % (1000 * 60 * 60 * 24 * 30)) / (1000 * 60 * 60 * 24)
+    );
+    const hours = Math.floor(
+      (diffTiempo % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+    );
+    const minutes = Math.floor((diffTiempo % (1000 * 60 * 60)) / (1000 * 60));
 
-                document.getElementById('contador').innerText = `${meses} Meses, ${dias} Días, ${horas} Horas, ${minutos} Minutos restantes para la boda`;
-            }
-        }
+    let timeRemaining = `${months} Months, ${days} Days, ${hours} Hours, ${minutes} Minutes remaining for the wedding`;
 
-        actualizarContador();
-        setInterval(actualizarContador, 1000);
+    if (document.documentElement.getAttribute("lang") === "en") {
+      timeRemaining = `${months} Months, ${days} Days, ${hours} Hours, ${minutes} Minutes remaining for the wedding`;
+    }
+
+    document.getElementById("contador").innerText = timeRemaining;
+  }
+}
+
+actualizarContador();
+setInterval(actualizarContador, 1000);
