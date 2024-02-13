@@ -88,3 +88,11 @@ footer {
 .edwardian{
     font-family: var(--font-edwardian);
 }
+
+.shini {
+  transition: all 0.5s ease-in-out;
+}
+
+.shini:hover {
+  text-shadow: 0 0 3px white;
+}
