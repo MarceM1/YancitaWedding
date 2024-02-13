@@ -1,0 +1,84 @@
+
+@font-face {
+    font-family:'EdwardianScript' ;
+    src: url("../assets/fonts/_EdwardianScriptITCStd.otf");
+}
+
+
+
+/* Roots */
+
+:root {
+
+    --font-cormorant: "Cormorant Garamond", serif !important;
+    --font-edwardian: 'EdwardianScript'!important;
+
+
+  --pink-solid: #efadb0;
+  --pink-mediun: #fbc8c6;
+  --pink-light: #fbd4ce;
+}
+
+/* Resets */
+
+*,
+**,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  width: 100vw;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+body {
+  max-width: 100%;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+
+ol,
+ul,
+li {
+  list-style: none;
+}
+
+/* Customs */
+
+header {
+  background-image: url(../assets/img/Fondos\ Boda\ Laing_Mesa\ de\ trabajo\ 1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+nav {
+  background-color: var(--pink-solid);
+}
+.versalita {
+  font-variant: small-caps;
+}
+.border__pink {
+  border-bottom: 2px solid var(--pink-mediun);
+}
+
+footer {
+  background-color: var(--pink-light);
+}
+
+.cormorant {
+    font-family: var(--font-cormorant);
+}
+
+.edwardian{
+    font-family: var(--font-edwardian);
+}
