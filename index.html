@@ -91,7 +91,7 @@
           >
             <h3 class="display-1 versalita cormorant m-0 p-0">Gary & Yancie</h3>
             <h5 class="m-0 p-0 text-center">
-              <i 
+              <i
                 >"Como el lirio entre los espinos, asi es mi amada entre las
                 doncellas"</i
               >
@@ -135,7 +135,7 @@
       <section id="detalles" class="mb-5 pb-5">
         <div class="row mt-5 pt-5">
           <article
-            class="col-12 col-md-6 d-flex flex-column px-2 px-md-5 mb-3 mb-md-0"
+            class="col-12 col-lg-6 d-flex flex-column px-2 px-md-5 mb-3 mb-md-0"
           >
             <h3 class="display-5 versalita border__pink pb-2">
               Detalles de la Boda
@@ -155,7 +155,7 @@
             </div>
           </article>
           <!-- Carrousel -->
-          <article class="col-12 col-md-6">
+          <article class="col-12 col-lg-6">
             <div
               id="carouselExample"
               class="carousel slide carousel-fade"
@@ -215,7 +215,7 @@
 
       <section id="registro" class="row mt-5 pt-5">
         <article
-          class="col col-md-6 -d-flex align-items-center justify-content-center order-2 order-md-1 mt-3 mt-md-0 mb-5 mb-md-0"
+          class="col-12 col-lg-6 -d-flex align-items-center justify-content-center order-2 order-md-1 mt-3 mt-md-0 mb-5 mb-md-0"
         >
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m19!1m8!1m3!1d123037.44586160123!2d-88.1259056!3d15.4887249!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x8f665dd3128f484d%3A0x2edf37053e4fe6e!2sCol.%20Trejo%2024%20Ave.%2021%20%26%2C%2022%20Cl.%20SO%2C%2021104%20San%20Pedro%20Sula!3m2!1d15.4887404!2d-88.04349909999999!5e0!3m2!1ses!2sar!4v1707792055209!5m2!1ses!2sar"
@@ -228,7 +228,7 @@
             class="rounded"
           ></iframe>
         </article>
-        <article class="col col-md-6 order-1 order-md-2">
+        <article class="col-12 col-lg-6 order-1 order-md-2">
           <h3 class="display-5 border__pink pb-2">Confirma tu Asistencia!</h3>
           <p class="fs-5">
             Estamos muy emocionados por nuestra boda y tu presencia es el mejor
@@ -246,47 +246,80 @@
             <div
               class="d-flex flex-column d-md-none justify-content-between gap-3"
             >
-              <input
-                type="text"
-                class="form-control w-100"
-                required
-                placeholder="Ingresa tu nombre y apellido"
-                name="name"
-                id="name"
-              />
+              <div class="d-flex flex-column">
+                <input
+                  type="text"
+                  class="form-control w-100"
+                  required
+                  placeholder="Ingresa tu nombre y apellido"
+                  name="name"
+                  id="name"
+                />
+                <div
+                  class="d-flex gap-3 align-items-center justify-content-between"
+                >
+                  <div class="d-flex gap-2">
+                    <input type="checkbox" name="invitado" id="invitado" />
+                    <label for="invitado">Invitado Lowe</label>
+                  </div>
+                  <div class="d-flex gap-2">
+                    <input type="checkbox" name="invitado" id="invitado" />
+                    <label for="invitado">Invitado Laing</label>
+                  </div>
+                </div>
+              </div>
               <button type="submit" class="btn btn-secondary">
                 Confirma Asistencia
               </button>
-              <div>
-                <small><i>Confirma tu asistencia hasta el 31 de marzo, de no hacerlo lo tomaremos como un no.
-                </i></small>
+              <div class="mt-2">
+                <small
+                  ><i
+                    >Confirma tu asistencia hasta el 31 de marzo, de no hacerlo
+                    lo tomaremos como un no.
+                  </i></small
+                >
               </div>
             </div>
 
-
             <div class="d-none d-md-flex flex-column justify-content-between">
               <div class="d-flex align-items-center justify-content-between">
-                <input
-                type="text"
-                class="form-control w-50"
-                required
-                placeholder="Ingresa tu nombre y apellido"
-                name="name"
-                id="name"
-              />
-              <button type="submit" class="btn btn-secondary">
-                Confirma Asistencia
-              </button>
+                <div class="d-flex flex-column">
+                  <input
+                    type="text"
+                    class="form-control w-100"
+                    required
+                    placeholder="Ingresa tu nombre y apellido"
+                    name="name"
+                    id="name"
+                  />
+                  <div
+                    class="d-flex gap-3 align-items-center justify-content-between"
+                  >
+                    <div class="d-flex gap-2">
+                      <input type="checkbox" name="invitado" id="invitado" />
+                      <label for="invitado">Invitado Lowe</label>
+                    </div>
+                    <div class="d-flex gap-2">
+                      <input type="checkbox" name="invitado" id="invitado" />
+                      <label for="invitado">Invitado Laing</label>
+                    </div>
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-secondary">
+                  Confirma Asistencia
+                </button>
               </div>
-              <div>
-                <small><i>Confirma tu asistencia hasta el 31 de marzo, de no hacerlo lo tomaremos como un no.
-                </i></small>
+              <div class="mt-2">
+                <small
+                  ><i
+                    >Confirma tu asistencia hasta el 31 de marzo, de no hacerlo
+                    lo tomaremos como un no.
+                  </i></small
+                >
               </div>
             </div>
           </form>
         </article>
-        
-
       </section>
     </main>
     <footer class="pt-5 mt-5">
@@ -310,7 +343,9 @@
           </li>
         </ul>
       </article>
-      <div class="row d-none d-md-flex align-items-center justify-content-center">
+      <div
+        class="row d-none d-md-flex align-items-center justify-content-center"
+      >
         <small class="d-flex justify-content-center"
           ><a
             href="https://marcelomelogno.netlify.app/"
@@ -321,7 +356,7 @@
           >. February 2024 | Design and Web Development
         </small>
       </div>
-      <div class="row  d-md-none align-items-center justify-content-center">
+      <div class="row d-md-none align-items-center justify-content-center">
         <small class="col-12 d-flex justify-content-center"
           ><a
             href="https://marcelomelogno.netlify.app/"
@@ -329,7 +364,7 @@
             referrerpolicy=""
             class=""
             ><strong>&copy;Marcelo Melogno</strong></a
-          >. February 2024 
+          >. February 2024
         </small>
         <small class="col-12 d-flex justify-content-center">
           Design and Web Development
