@@ -96,3 +96,12 @@ footer {
 .shini:hover {
   text-shadow: 0 0 3px white;
 }
+
+.pink{
+  color: var(--pink-solid);
+  transition: all .3s ease-in-out;
+}
+
+.pink:hover{
+  text-shadow: 0 0 3px var(--pink-solid);
+}
